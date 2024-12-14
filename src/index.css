@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #222222;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navBar{
+  background-color: #f4f5f4;
+}
+
+.navBar .logo{
+  padding-right: 50px;
+}
+
+.navBar .logo a{
+  color: #222222;
+  text-decoration: none;
+}
+
+.inner-navbar{
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.navBar ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px 8px;
+  border-right: 0.5px solid #999999a1;
+}
+
+.navBar ul li:nth-child(1) a{
+  border-left: 0.5px solid #999999a1;
+}
+
+.topHeading marquee{
+  display: flex;
+  background-color: #f4f5f4;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.topHeading marquee span{
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.publishDate{
+  font-weight: bold;
+}
+
+.newsContent , .newsTitle, .publishDate{
+  max-width: 1400px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+.newsImg{
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+.newsImg img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.displayNewsCard{
+  max-width: 1400px;
+  width: 100%;
+  margin-left: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.newsCard{
+  max-width: 380px;
+  border: 0.5px solid #ebebeb;
+  box-shadow: 0 0 4px -4px #000;
+  cursor: pointer;
+}
+
+.newsCard .newsCardImg{
+  width: 100%;
+  height: 380px;
+}
+
+.newsCard .newsCardImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.newsCardTitle{
+  padding: 10px;
+  font-size: 14px;
+}
+
+.notFoundText{
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.loadingMetre{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
