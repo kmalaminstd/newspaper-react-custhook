@@ -17,6 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .navBar{
   background-color: #f4f5f4;
 }
@@ -134,4 +136,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.paginationControl{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.paginationControl button{
+  padding: 5px 15px;
+  color: #fff;
+  background-color: rgb(59, 108, 136);
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled{
+  cursor: no-drop;
+  opacity: 0.5;
+}
+
+button.activePageBtn{
+  background-color: lightgreen;
 }

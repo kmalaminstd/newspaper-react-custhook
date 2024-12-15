@@ -17,6 +17,7 @@ function AllNews() {
     
     // console.log(breakingNews);
 
+
     const newsRedirect = (title)=>{
       navigate(`/news/${title}`)
     }
@@ -48,9 +49,13 @@ function AllNews() {
               }
             </marquee>
           </div>
+
           <div className="displayNewsCard">
             { breakingNews && <NewsCard data={breakingNews} />}
           </div>
+          
+
+          
         </>
       }
     </>
