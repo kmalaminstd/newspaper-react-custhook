@@ -7,7 +7,7 @@ function NewsDetails() {
 
     const { title } = useParams()
 
-    const apiKey = import.meta.env.VITE_NEWS_API
+    const apiKey = import.meta.env.NEWS_API
 
     const { data : topNewsHeading , loading : topNewsHeadingLoading } = useAllNewsData(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`)
 
